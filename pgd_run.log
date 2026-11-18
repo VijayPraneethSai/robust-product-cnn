@@ -1,0 +1,35 @@
+train=55000 val=5000 test=10000
+training undefended baseline...
+  [undefended] epoch 1/15  train_loss=0.5623  val_clean_acc=0.8670  elapsed=20s
+  [undefended] epoch 2/15  train_loss=0.3523  val_clean_acc=0.8920  elapsed=40s
+  [undefended] epoch 3/15  train_loss=0.2971  val_clean_acc=0.9040  elapsed=61s
+  [undefended] epoch 4/15  train_loss=0.2682  val_clean_acc=0.9068  elapsed=81s
+  [undefended] epoch 5/15  train_loss=0.2484  val_clean_acc=0.9112  elapsed=101s
+  [undefended] epoch 6/15  train_loss=0.2284  val_clean_acc=0.9120  elapsed=120s
+  [undefended] epoch 7/15  train_loss=0.2120  val_clean_acc=0.9182  elapsed=140s
+  [undefended] epoch 8/15  train_loss=0.1953  val_clean_acc=0.9210  elapsed=160s
+  [undefended] epoch 9/15  train_loss=0.1864  val_clean_acc=0.9152  elapsed=180s
+  [undefended] epoch 10/15  train_loss=0.1714  val_clean_acc=0.9248  elapsed=201s
+  [undefended] epoch 11/15  train_loss=0.1591  val_clean_acc=0.9252  elapsed=223s
+  [undefended] epoch 12/15  train_loss=0.1496  val_clean_acc=0.9212  elapsed=245s
+  [undefended] epoch 13/15  train_loss=0.1415  val_clean_acc=0.9262  elapsed=265s
+  [undefended] epoch 14/15  train_loss=0.1276  val_clean_acc=0.9220  elapsed=286s
+  [undefended] epoch 15/15  train_loss=0.1216  val_clean_acc=0.9280  elapsed=305s
+training PGD-adversarially-trained model...
+  [pgd_defended] epoch 1/15  train_loss=1.0160  val_clean_acc=0.7920  elapsed=201s
+  [pgd_defended] epoch 2/15  train_loss=0.7881  val_clean_acc=0.8156  elapsed=399s
+  [pgd_defended] epoch 3/15  train_loss=0.7350  val_clean_acc=0.8280  elapsed=599s
+  [pgd_defended] epoch 4/15  train_loss=0.6978  val_clean_acc=0.8478  elapsed=790s
+  [pgd_defended] epoch 5/15  train_loss=0.6761  val_clean_acc=0.8490  elapsed=997s
+  [pgd_defended] epoch 6/15  train_loss=0.6564  val_clean_acc=0.8530  elapsed=1209s
+  [pgd_defended] epoch 7/15  train_loss=0.6414  val_clean_acc=0.8540  elapsed=1407s
+  [pgd_defended] epoch 8/15  train_loss=0.6232  val_clean_acc=0.8550  elapsed=1605s
+  [pgd_defended] epoch 9/15  train_loss=0.6094  val_clean_acc=0.8576  elapsed=1812s
+  [pgd_defended] epoch 10/15  train_loss=0.5993  val_clean_acc=0.8544  elapsed=2017s
+  [pgd_defended] epoch 11/15  train_loss=0.5874  val_clean_acc=0.8578  elapsed=2229s
+  [pgd_defended] epoch 12/15  train_loss=0.5824  val_clean_acc=0.8616  elapsed=2441s
+  [pgd_defended] epoch 13/15  train_loss=0.5743  val_clean_acc=0.8618  elapsed=2637s
+  [pgd_defended] epoch 14/15  train_loss=0.5674  val_clean_acc=0.8582  elapsed=2833s
+  [pgd_defended] epoch 15/15  train_loss=0.5606  val_clean_acc=0.8606  elapsed=3035s
+undefended     clean_acc=0.9212  whitebox_PGD_success=0.9956  transfer_attack_success=0.9978
+pgd_defended   clean_acc=0.8458  whitebox_PGD_success=0.0903  transfer_attack_success=0.0129

@@ -1,0 +1,50 @@
+{
+  "dataset": "Fashion-MNIST (real, Zalando product photos, 10 apparel categories)",
+  "train_n": 54000,
+  "val_n": 6000,
+  "test_n": 10000,
+  "attack_set_n": 600,
+  "total_time_sec": 3164.2,
+  "undefended_clean_test_acc": 0.9194,
+  "undefended_attack_success_rate": 0.84,
+  "defense_rounds": [
+    {
+      "round": 1,
+      "val_acc": 0.9205,
+      "attack_success_rate": 1.0,
+      "round_time_sec": 793.1
+    },
+    {
+      "round": 2,
+      "val_acc": 0.9171666666666667,
+      "attack_success_rate": 1.0,
+      "round_time_sec": 818.0
+    },
+    {
+      "round": 3,
+      "val_acc": 0.9185,
+      "attack_success_rate": 0.975,
+      "round_time_sec": 762.0
+    },
+    {
+      "round": 4,
+      "val_acc": 0.923,
+      "attack_success_rate": 1.0,
+      "round_time_sec": 763.9
+    },
+    {
+      "round": 5,
+      "val_acc": 0.9208333333333333,
+      "attack_success_rate": 0.9866666666666667,
+      "round_time_sec": 755.0
+    },
+    {
+      "round": 6,
+      "val_acc": 0.9218333333333333,
+      "attack_success_rate": 1.0,
+      "round_time_sec": 751.8
+    }
+  ],
+  "defended_clean_test_acc": 0.9183,
+  "defended_attack_success_rate": 0.9983333333333333
+}
